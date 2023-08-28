@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/tokens",
-  "version": "1.0.0",
+  "name": "@raiane-ignite-ui/tokens",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,7 +9,6 @@
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "lint": "eslint src/**/*.ts* --fix"
-
   },
   "keywords": [],
   "author": "",
@@ -17,8 +16,7 @@
   "devDependencies": {
     "tsup": "^7.2.0",
     "typescript": "^5.1.6",
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/ts-config": "*"
-
+    "@raiane-ignite-ui/eslint-config": "*",
+    "@raiane-ignite-ui/ts-config": "*"
   }
 }

@@ -1,4 +1,4 @@
-import { MultiStep, MultiStepProps } from '@ignite-ui/react'
+import { MultiStep, MultiStepProps } from '@raiane-ignite-ui/react'
 import { Meta, StoryObj } from '@storybook/react'
 
 export default {

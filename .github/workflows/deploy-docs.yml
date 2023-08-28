@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 18
 
-      - run: npm ci
+      - run: npm ci # instala os pacotes na máquina virtual do github, mas não altera o package-lock.json
 
       - run: npm run build
 
