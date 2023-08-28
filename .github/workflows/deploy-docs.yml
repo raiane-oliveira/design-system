@@ -21,6 +21,9 @@ jobs:
       - run: npm ci # instala os pacotes na máquina virtual do github, mas não altera o package-lock.json
 
       - run: npm run build
+        env: 
+            TURBO_TOKEN: A7Q5elgjvUdrgDEjWR3mvaHr
+            TURBO_TEAM: raiane-oliveira
 
       - name: Deploy storybook
         working-directory: ./packages/docs
