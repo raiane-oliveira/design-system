@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci # instala os pacotes na máquina virtual do github, mas não altera o package-lock.json
 
