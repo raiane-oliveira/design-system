@@ -1,45 +1,35 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Button, Text, Tooltip } from "@raiane-ignite-ui/react"
+import { Button, Tooltip, TooltipProps } from "@raiane-ignite-ui/react"
 
 export default {
-  title: 'Tooltip',
-  component: Tooltip.Root,
-  
-  
+  title: 'Data Display/Tooltip',
+  component: Tooltip,
 
-} as Meta
+  argTypes: {
+    children: {
+      control: {
+        type: null
+      }
+    }
+  }
 
-export const Primary: StoryObj<Tooltip.TooltipProps> = {
+} as Meta<TooltipProps>
+
+export const Primary: StoryObj<TooltipProps> = {
   args: {
     children: (
-      <>
-        <Tooltip.Trigger asChild>
-          <Button>
-            21
-          </Button>
-        </Tooltip.Trigger>
-        <Tooltip.Content>
-          <Text size="sm">21 de Outubro - Indisponível</Text>
-        </Tooltip.Content>
-      </>
-    )
+      <Button>21</Button>
+    ),
+    content: '21 de Outubro - Indisponível',
   },
 }
 
-export const ShowTooltipInstantly: StoryObj<Tooltip.TooltipProps> = {
+export const ShowTooltipInstantly: StoryObj<TooltipProps> = {
   args: {
     delayDuration: 0,
     children: (
-      <>
-        <Tooltip.Trigger asChild>
-          <Button>
-              21
-          </Button>
-        </Tooltip.Trigger>
-        <Tooltip.Content>
-          <Text size="sm">21 de Outubro - Indisponível</Text>
-        </Tooltip.Content>
-      </>
-    )
+      <Button>21</Button>
+    ),
+    content: '21 de Outubro - Indisponível'
   }
 }
