@@ -1,5 +1,11 @@
 # @raiane-ignite-ui/react
 
+## 3.1.0
+
+### Minor Changes
+
+- Add Toast and Tooltip components
+
 ## 3.0.1
 
 ### Patch Changes
